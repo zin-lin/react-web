@@ -71,16 +71,7 @@ export  function NavReactor(){
             
             
             <img src= {logo} style={{marginLeft:20}} alt="Annex:Mymate" width={35} height={35}></img>
-            <button className="red circle" onClick={close} 
-            ></button>
-
-            <button className="yellow circle" onClick={minimize} 
-            ></button>
-
-            <button className="blue circle" onClick={maximize} 
-            ></button>
-
-
+           
             <Link className="nav-components" to="/" ><li>
                  <FontAwesomeIcon className="icon" icon= {faHome}/> Home</li></Link>
 
@@ -88,18 +79,17 @@ export  function NavReactor(){
             <li> <FontAwesomeIcon className="icon" icon= {faIdCard}/>Cards</li></Link>
 
             <form>
-            <input className="navbar-input fader" placeholder="Search ..."></input>
-            <button className="navbar-button fader"
-            ><FontAwesomeIcon className="nav-components clicker" icon={faSearch}
-            style={{marginRight:10}}
-            />Search</button>
- </form>
+                <input className="navbar-input fader" placeholder="Search ..."></input>
+                <button className="navbar-button fader"
+                ><FontAwesomeIcon className="nav-components clicker" icon={faSearch}
+                style={{marginRight:10}}
+                />Search</button>
+            </form>
          
             <button className="toggle" ><FontAwesomeIcon className="navbar-components"
             icon={faBars} style={{width:20, height:20}} onClick = {showOrNotShowToggle}
             /></button>
            
-
         </nav>
     );
 
@@ -121,21 +111,11 @@ export class NavWhenNotSignedInOrAuthed extends React.Component {
            
 
 
-            <div style={{alignSelf:"center", flex:"auto", marginLeft:40, }}>
+            <div style={{alignSelf:"center", flex:"auto", marginLeft:0, }}>
                 <p className="t" style={{alignContent:"center", alignItems:"center", alignSelf:"center", textAlign:"center",
                   fontSize:23,
             }}>Annex:MyMate</p>
             </div>
-
-            <button className="red circle" onClick={close} 
-            ></button>
-
-            <button className="yellow circle" onClick={minimize} 
-            ></button>
-
-            <button className="blue circle" onClick={maximize} 
-            ></button>
-        
         </nav>
     );
 
