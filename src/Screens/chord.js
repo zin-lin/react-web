@@ -27,7 +27,9 @@ export default function Home(){
    let user =   firebase.auth().currentUser;
    var nav = useHistory()
    const RenderCards =()=>{
-    return( <Flat style={{marginRight:4}}
+    return( 
+    <Flat style={{marginRight:4}} 
+    
      sortBy={["name:", {key: "docId", descending: false}]}
      renderWhenEmpty={()=>{
       return <div style={{flex:"auto",width:"100%",display:"flex"}}>
